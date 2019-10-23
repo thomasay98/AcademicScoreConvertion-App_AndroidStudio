@@ -25,12 +25,6 @@ public class MainActivity extends AppCompatActivity {
         btngnrt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                TextView txtresult = (TextView) findViewById(R.id.txtresult);
-//                EditText edtinput = (EditText) findViewById(R.id.edtinput);
-
-                //double getinput = Double.parseDouble(edtinput.getText().toString());
-
-                //double over100 = Double.parseDouble(edtinput.getText().toString());
 
                 if (edtinput.getText().toString().length()==0){
                     txtresult.setTextSize(30);
@@ -43,16 +37,12 @@ public class MainActivity extends AppCompatActivity {
                     txtresult.setText("Score Tidak Boleh Lebih Dari 100!");
                     Toast.makeText(MainActivity.this, "Add Score (0-100)!", Toast.LENGTH_SHORT).show();
                 }
-                else{
+                else {
                     txtresult.setTextSize(180);
                     myConv.numScore(Double.parseDouble(edtinput.getText().toString()));
                     txtresult.setText(myConv.converting());
                     Toast.makeText(MainActivity.this, "Convertion Success", Toast.LENGTH_SHORT).show();
                 }
-
-//                myConv.numScore(getinput);
-//                txtresult.setText(myConv.converting());
-//                Toast.makeText(MainActivity.this, "Convertion Success", Toast.LENGTH_SHORT).show();
 
             }
         });
