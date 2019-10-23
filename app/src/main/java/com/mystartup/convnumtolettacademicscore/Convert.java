@@ -8,7 +8,7 @@ public class Convert implements IfConvert{
 
     //constructor
     public Convert (double score) {
-        if (score == 0f) {
+        if (score == 0) {
             return;
         }
         this.score = score;
@@ -16,7 +16,7 @@ public class Convert implements IfConvert{
 
     //method of initial score
     public void numScore(double score){
-        if (score == 0f) {
+        if (score == 0) {
             return;
         }
         this.score = score;
