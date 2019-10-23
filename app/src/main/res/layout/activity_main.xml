@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:background="#ffffff"
             android:gravity="center"
-            android:hint="00.00"
+            android:hint="0.00"
             android:textSize="20sp"
             android:maxLength="5"
             android:inputType="numberDecimal"/>
